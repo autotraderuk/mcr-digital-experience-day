@@ -3,14 +3,19 @@
 # Useful resources
 
 [GitHub](http://www.github.com)
+
 [GitHub pages](http://pages.github.com)
 
 [HTML Reference](http://www.w3schools.com/tags/ref_byfuncasp)
+
 [CSS Reference](http://www.w3schools.com/css/default.asp)
+
 [Bootstrap documentation](http://getbootstrap.com)
+
 [Google fonts](https://www.google.com/fonts)
 
 [Javascript documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+
 [JQuery documentation](https://api.jquery.com/)
 
 ## What's the plan?
