@@ -1,0 +1,89 @@
+img{
+	margin: 30px 0;
+}
+
+.font-family-sans{
+	font-family: Arial, Helvetica, sans-serif
+}
+
+.font-family-serif{
+	font-family: "Times New Roman", Times, serif;
+}
+
+.font-weight{
+	font-weight: bold;
+}
+
+.font-size{
+	font-size: 30px;
+}
+
+.font-color{
+	color: red;
+}
+
+.font-varient{
+	font-variant: small-caps;
+}
+
+.block{	
+	height: 200px;
+	margin: 0 0 20px 0;
+	width: 200px;
+}
+
+.block-1{
+	background-color: red;
+}
+
+.block-2{
+	background-color: #00FF00;
+}
+
+.block-3{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a7ed2f+0,f93618+100 */
+	background: #a7ed2f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a7ed2f 0%, #f93618 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #a7ed2f 0%,#f93618 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #a7ed2f 0%,#f93618 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7ed2f', endColorstr='#f93618',GradientType=0 ); /* IE6-9 */
+}
+
+.block-4{
+	border: 5px solid red;
+}
+
+.block-5{
+	border-top: 1px solid green;
+	border-right: 3px solid blue;
+	border-bottom: 5px solid red;
+	border-left: 10px solid yellow;
+}
+
+.block-6{
+	border-width: 5px;
+	border-style: dashed;
+	border-color: red;
+}
+
+.block-7,
+.block-8{
+	background: red;
+}
+
+.block-7{
+	padding: 50px;
+}
+
+.block-7-inner{
+	background: yellow;
+	height: 50px;
+	width: 50px;
+}
+
+.block-8{
+	margin: 100px;
+}
+
+
+

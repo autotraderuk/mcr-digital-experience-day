@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>To Do</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="javascript/tiny-uuid4.min.js" ></script>
+    <script src="javascript/toDo.js" ></script>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-2">
+          <div id="username"></div>
+        </div>
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-2">
+          <button id="login"></button>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-12">
+          <h1>Top Heading</h1>
+          <p>This content is in the top section of the page, replace it.</p>
+        </div>
+        <input type="textfield"" id="item"></input>
+        <button id="add_item">Add Item</button>
+        
+        </ul>
+      </div>
+       <div class="row ">
+          <div class="col-md-4 ">
+            <h3>Todo list: </h3>
+            <ul id="toDoList">
+            </ul>
+          </div>
+          
+          <div class="col-md-4 ">
+            <h3>Completed: </h3>
+            <ul id="completedList">
+            </ul>
+          </div>
+      </div>
+    </div>
+      <script>
+        var toDo = new ToDo();
+        
+        
+        // get the name for the current users and add it to the html
+        $("#username").html(toDo.getUsername());
+        // initialise the login/logout button to "login"
+        $("#login").html("login");
+        
+        $("#add_item").on("click", function(e) {
+          var item = $("#item").val();
+          if (item && item.length > 0) {
+            toDo.add(item);
+          }
+        });
+        
+        toDo.getList(function(item){
+          $("#toDoList").append("<li>" + item.user + ":" + item.text + "<button type=\"button\" id =" + item.id + ">Complete Task</button>" +  "</li>");
+        });
+        
+        toDo.getCompletedList(function(item){
+          $("#completedList").append("<li>" + item.user + ":" + item.text + "<button type=\"button\" id =" + item.id + ">Remove Task</button>" +  "</li>");
+        });
+        
+        
+       $("#toDoList").on("click", "button", function(e) {
+            $("#completedList").append($(this).parent());
+            toDo.markDone(this.id);
+        });
+        
+        $("#completedList").on("click", "button", function(e){
+            toDo.remove(this.id);
+            $(this).parent().remove();
+        });
+        
+      </script>
+
+  </body>
+</html>
