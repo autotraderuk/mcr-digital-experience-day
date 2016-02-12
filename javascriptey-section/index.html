@@ -76,7 +76,7 @@
         <script id="commentTemplate" type="text/html">
             <div class="comment row">
                 <div class="commentator col-xs-7">{{name}} says: </div>
-                <div class="col-xs-5 removeBox"><span class="remove">x</span></div>
+                <div class="col-xs-5 removeBox"><span class="remove" data-comment-id="{{id}}">x</span></div>
                 <div class="col-xs-12 commentText">{{comment}}</div>
                 <div class="col-xs-12 commentDate">{{date}}</div>
             </div>
@@ -85,6 +85,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js"></script>
         <script src="https://code.jquery.com/jquery-2.2.0.min.js" ></script>
+        <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
         <script src="javascript/javascript.js"></script>
     </body>
 </html>
