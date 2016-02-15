@@ -20,7 +20,7 @@
 
 ## What's the plan?
 
-We'll take the approach of putting one facilitator with n pairs of students, the facilitator to take their pairs through a series of activities based around building a website and using GitHub pages to host it. We should be able to cover everything with each facilitator taking a half day sift at some point over Thursday and Friday, and the schedule for each day is provisionally as follows:
+We'll take the approach of putting one facilitator with 2^n students, the facilitator to take their pairs through a series of activities based around building a website and using GitHub pages to host it. We should be able to cover everything with each facilitator taking a half day sift at some point over Thursday and Friday, and the schedule for each day is provisionally as follows:
 
 * Introduction to the day; H&S announcements
 * Get them to pair up
